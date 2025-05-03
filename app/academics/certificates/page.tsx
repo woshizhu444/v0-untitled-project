@@ -1,33 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Target, Users, ArrowRight } from "lucide-react"; // Example icons
+import { Award, Target, Users, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for Certificate programs
 const certificatePrograms = [
   {
     title: "Certificate in School Leadership",
     description: "A focused program for current or aspiring school principals and administrators seeking advanced leadership skills.",
     icon: <Award className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/certificates/school-leadership", // Link to specific program details page
   },
   {
     title: "Certificate in Startup Management",
     description: "Gain practical knowledge in launching and scaling a new business venture, covering key aspects from ideation to funding.",
     icon: <Target className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/certificates/startup-management",
   },
   {
     title: "Certificate in Non-Profit Leadership",
     description: "Specialized training for individuals leading or working within non-profit organizations, focusing on governance, fundraising, and impact measurement.",
     icon: <Users className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/certificates/non-profit-leadership",
   },
-  // Add more programs as needed
 ];
 
 export default function CertificateProgramsPage() {

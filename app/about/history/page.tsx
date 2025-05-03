@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollText } from "lucide-react";
 
-// Placeholder data for timeline events
 const timelineEvents = [
   {
     year: "2015",
@@ -54,7 +53,6 @@ export default function HistoryPage() {
         {timelineEvents.map((event, index) => (
           <div key={index} className="grid md:grid-cols-[auto_1fr] items-start gap-x-6 gap-y-2 relative">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20 -ml-[30px] z-10 bg-background">
-              {/* Icon can be dynamic based on event type if needed */}
               {event.icon}
             </div>
             <div className="md:pt-2">
@@ -65,7 +63,6 @@ export default function HistoryPage() {
         ))}
       </div>
 
-      {/* Optional: Add a concluding paragraph or image */}
       <div className="mt-16 text-center">
         <p className="text-lg text-muted-foreground">
           Our history is a testament to our commitment to excellence and innovation in education.

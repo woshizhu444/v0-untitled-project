@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Lightbulb, Users, Target } from "lucide-react"; // Example icons
+import { Lightbulb, Users, Target } from "lucide-react";
 
 export default function AcademicPhilosophyPage() {
   return (
@@ -33,7 +33,7 @@ export default function AcademicPhilosophyPage() {
               </span>
             </li>
              <li className="flex items-start">
-              <Lightbulb className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" /> {/* Placeholder icon */}
+              <Lightbulb className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
               <span>
                 <strong>Research-Informed Practice:</strong> Grounding education in current research and evidence-based practices.
               </span>
@@ -42,7 +42,7 @@ export default function AcademicPhilosophyPage() {
         </div>
         <div className="relative h-96 rounded-lg overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1920&h=1080&auto=format&fit=crop" // Placeholder
+            src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="Students collaborating"
             fill
             className="object-cover"

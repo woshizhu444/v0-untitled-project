@@ -1,29 +1,28 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { DollarSign, BookOpen, GraduationCap, Info } from "lucide-react"; // Example icons
+import { DollarSign, BookOpen, GraduationCap, Info } from "lucide-react";
 import Link from "next/link";
 
-// Placeholder data - REPLACE WITH ACTUAL COSTS
 const undergraduateTuition = {
-  perCredit: "[Cost] KGS / USD",
-  perSemesterFullTime: "[Cost] KGS / USD (e.g., 15 credits)",
-  perYearFullTime: "[Cost] KGS / USD (e.g., 30 credits)",
+  perCredit: "Contact Finance Office",
+  perSemesterFullTime: "Contact Finance Office",
+  perYearFullTime: "Contact Finance Office",
 };
 
 const graduateTuition = {
-  perCredit: "[Cost] KGS / USD",
-  perSemesterFullTime: "[Cost] KGS / USD (e.g., 9-12 credits)",
-  perYearFullTime: "[Cost] KGS / USD (e.g., 18-24 credits)",
+  perCredit: "Contact Finance Office",
+  perSemesterFullTime: "Contact Finance Office",
+  perYearFullTime: "Contact Finance Office",
 };
 
 const additionalFees = [
-  { fee: "Application Fee (non-refundable)", cost: "[Cost] KGS / USD" },
-  { fee: "Student Activity Fee (per semester)", cost: "[Cost] KGS / USD" },
-  { fee: "Technology Fee (per semester)", cost: "[Cost] KGS / USD" },
-  { fee: "Library Fee (per semester)", cost: "[Cost] KGS / USD" },
-  { fee: "Graduation Fee", cost: "[Cost] KGS / USD" },
-  { fee: "Health Insurance (mandatory for international students)", cost: "[Cost] KGS / USD per year (approx.)" },
-  // Add other fees like housing, dining plan costs if applicable and managed by the institute
+  { fee: "Application Fee (non-refundable)", cost: "Contact Finance Office" },
+  { fee: "Student Activity Fee (per semester)", cost: "Contact Finance Office" },
+  { fee: "Technology Fee (per semester)", cost: "Contact Finance Office" },
+  { fee: "Library Fee (per semester)", cost: "Contact Finance Office" },
+  { fee: "Graduation Fee", cost: "Contact Finance Office" },
+  { fee: "Health Insurance (mandatory for international students)", cost: "Contact Finance Office (approx.)" },
+  // Note: Housing and dining plan costs are separate and vary.
 ];
 
 export default function TuitionFeesPage() {
@@ -42,9 +41,9 @@ export default function TuitionFeesPage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <BookOpen className="h-6 w-6 text-primary" />
-                Undergraduate Tuition ([Academic Year])
+                Undergraduate Tuition (Current Academic Year)
               </CardTitle>
-              <CardDescription>Estimated costs for Bachelor's programs.</CardDescription>
+              <CardDescription>Estimated costs for Bachelor's programs. Please confirm with the Finance Office.</CardDescription>
             </CardHeader>
             <CardContent>
               <Table>
@@ -71,9 +70,9 @@ export default function TuitionFeesPage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <GraduationCap className="h-6 w-6 text-primary" />
-                Graduate Tuition ([Academic Year])
+                Graduate Tuition (Current Academic Year)
               </CardTitle>
-               <CardDescription>Estimated costs for Master's and Certificate programs.</CardDescription>
+               <CardDescription>Estimated costs for Master's and Certificate programs. Please confirm with the Finance Office.</CardDescription>
             </CardHeader>
             <CardContent>
                <Table>
@@ -101,9 +100,9 @@ export default function TuitionFeesPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <DollarSign className="h-6 w-6 text-primary" />
-              Additional Fees ([Academic Year])
+              Additional Fees (Current Academic Year)
             </CardTitle>
-            <CardDescription>Common fees in addition to tuition.</CardDescription>
+            <CardDescription>Common fees in addition to tuition. Please confirm with the Finance Office.</CardDescription>
           </CardHeader>
           <CardContent>
             <Table>

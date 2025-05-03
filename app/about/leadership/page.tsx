@@ -1,42 +1,40 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react"; // Assuming social/contact icons
+import { Linkedin, Mail } from "lucide-react";
 
-// Placeholder data for leadership team members
 const leadershipTeam = [
   {
     name: "Dr. Elena Petrova",
     title: "President",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&h=400&auto=format&fit=crop", // Placeholder image
     bio: "Dr. Petrova brings over 20 years of experience in higher education administration and a deep commitment to fostering academic excellence and innovation.",
-    linkedin: "#", // Replace with actual LinkedIn URL
-    email: "#", // Replace with actual email
+    linkedin: "",
+    email: "",
   },
   {
     name: "Prof. Almaz Isakov",
     title: "Provost & VP for Academic Affairs",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300&h=400&auto=format&fit=crop", // Placeholder image
     bio: "Professor Isakov oversees all academic programs and research initiatives, ensuring rigorous standards and a supportive learning environment.",
-    linkedin: "#",
-    email: "#",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Ms. Gulnara Asanova",
     title: "VP for Finance & Administration",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&h=400&auto=format&fit=crop", // Placeholder image
     bio: "Ms. Asanova manages the Institute's financial health and administrative operations, ensuring efficient resource allocation and smooth functioning.",
-    linkedin: "#",
-    email: "#",
+    linkedin: "",
+    email: "",
   },
    {
     name: "Mr. Timur Sultanov",
     title: "Dean of Entrepreneurship",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=300&h=400&auto=format&fit=crop", // Placeholder image
     bio: "Mr. Sultanov leads the Entrepreneurship Center, connecting students with resources and mentorship to launch successful ventures.",
-    linkedin: "#",
-    email: "#",
+    linkedin: "",
+    email: "",
   },
-  // Add more members as needed
 ];
 
 export default function LeadershipPage() {
@@ -52,8 +50,7 @@ export default function LeadershipPage() {
           <Card key={member.name} className="overflow-hidden">
             <div className="relative h-64 w-full bg-muted">
               <Image
-                // Note: Using placeholder from public folder. Update paths when real images are added.
-                src={member.imageUrl.startsWith('/public') ? member.imageUrl.replace('/public', '') : member.imageUrl}
+                src={member.imageUrl}
                 alt={`Portrait of ${member.name}`}
                 fill
                 className="object-cover"

@@ -2,37 +2,37 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Lightbulb, BookOpen, Users, TrendingUp, FlaskConical } from "lucide-react"; // Example icons
 import Image from "next/image";
 
-// Placeholder data for research areas
+// Data for research areas - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const researchAreas = [
   {
     title: "Educational Leadership & Policy",
     description: "Examining effective leadership practices, school improvement strategies, educational policy analysis, and governance in educational institutions.",
     icon: <BookOpen className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
   {
     title: "Entrepreneurship & Innovation in Education",
     description: "Exploring the intersection of entrepreneurship and education, including EdTech startups, innovative pedagogical models, and fostering entrepreneurial mindsets in students.",
     icon: <Lightbulb className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
   {
     title: "Curriculum & Instruction",
     description: "Researching effective teaching methodologies, curriculum design, assessment strategies, and learning technologies across various educational levels.",
     icon: <FlaskConical className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1491841573253-a4ba494d397b?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1491841573253-a4ba494d397b?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
    {
     title: "Social Impact & Community Development",
     description: "Investigating the role of education and entrepreneurship in driving social change, community development, and sustainable practices.",
     icon: <Users className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
    {
     title: "Technology Enhanced Learning",
     description: "Focusing on the design, implementation, and evaluation of digital tools and platforms to enhance teaching and learning experiences.",
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
 ];
 

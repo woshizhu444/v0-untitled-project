@@ -7,7 +7,7 @@ const facultyMembers = [
   {
     name: "Dr. Aisha Bakyt",
     title: "Professor, Educational Leadership",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Placeholder faculty image 1
     expertise: ["School Management", "Policy Analysis", "Curriculum Development"],
     bio: "Dr. Bakyt's research focuses on effective leadership strategies in K-12 education within the Central Asian context.",
     profileUrl: "#", // Link to a detailed profile page if available
@@ -15,7 +15,7 @@ const facultyMembers = [
   {
     name: "Dr. Nurlan Djumashev",
     title: "Associate Professor, Entrepreneurship",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Placeholder faculty image 2
     expertise: ["Social Entrepreneurship", "Startup Incubation", "SME Growth"],
     bio: "Dr. Djumashev mentors aspiring entrepreneurs and studies the factors driving small business success in emerging economies.",
     profileUrl: "#",
@@ -23,7 +23,7 @@ const facultyMembers = [
   {
     name: "Ms. Samara Keneshova",
     title: "Lecturer, Educational Technology",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Placeholder faculty image 3
     expertise: ["Instructional Design", "Online Learning", "EdTech Integration"],
     bio: "Ms. Keneshova explores innovative ways to integrate technology into teaching and learning processes.",
     profileUrl: "#",
@@ -31,7 +31,7 @@ const facultyMembers = [
   {
     name: "Dr. Bolot Askarov",
     title: "Professor, Leadership Studies",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1622675363519-dff410113c8a?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Placeholder faculty image 4
     expertise: ["Organizational Behavior", "Ethical Leadership", "Cross-Cultural Management"],
     bio: "Dr. Askarov's work examines the nuances of leadership across different cultural and organizational settings.",
     profileUrl: "#",

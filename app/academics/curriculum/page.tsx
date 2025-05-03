@@ -74,7 +74,7 @@ export default function CurriculumPage() {
       {/* Optional: Link to detailed course catalog */}
       <div className="mt-12 text-center">
         <p className="text-muted-foreground">
-          Detailed course descriptions and program-specific curriculum maps are available in the [Link to Course Catalog or Program Pages].
+          Detailed course descriptions and program-specific curriculum maps are available through the respective program pages or the official course catalog.
         </p>
         {/* Example Button:
         <Button asChild className="mt-4">

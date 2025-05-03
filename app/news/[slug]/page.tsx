@@ -5,17 +5,16 @@ import { Badge } from "@/components/ui/badge";
 
 export const runtime = 'edge'; // Add this line for Cloudflare Pages Edge Runtime compatibility
 
-// Placeholder data for news articles (same as in news/page.tsx for lookup)
-// In a real application, this data would likely come from a CMS or database
+// Data for news articles - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const newsItems = [
-   {
+  {
     slug: "entrepreneurship-center",
     title: "MOM Launches New Entrepreneurship Center",
     date: "May 1, 2023",
     author: "Institute Communications", // Optional author
     category: "Campus News", // Optional category
     excerpt: "The Institute has opened a state-of-the-art center to foster innovation and entrepreneurial skills among students.",
-    imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&h=1080&auto=format&fit=crop", // Use a larger/higher res image if available
+    imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&h=1080&auto=format&fit=crop", // Example image
     content: `
 <p>Bishkek, Kyrgyzstan – The Institute of Educational Leadership and Entrepreneurship (MOM) proudly announced the official opening of its new state-of-the-art Entrepreneurship Center today. The center aims to be a hub for innovation, collaboration, and venture creation for students across all disciplines.</p>
 <p>Located on the ground floor of the Innovation Hub building, the center features modern co-working spaces, meeting rooms equipped with the latest technology, a maker space with prototyping tools, and dedicated offices for mentorship programs.</p>
@@ -30,7 +29,7 @@ const newsItems = [
 </ul>
 <p>Timur Sultanov, Dean of Entrepreneurship, added, "Our goal is to empower students to turn their innovative ideas into viable businesses and social ventures. This center will provide the critical support system they need to succeed."</p>
 <p>The launch event was attended by university leadership, faculty, students, local business leaders, and government officials. The center is now open to all MOM students interested in exploring entrepreneurship.</p>
-`, // Placeholder full content (HTML string)
+`, // Example full content (HTML string)
   },
   {
     slug: "international-conference",
@@ -42,7 +41,7 @@ const newsItems = [
     imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1920&h=1080&auto=format&fit=crop",
     content: `
 <p>The Institute successfully hosted the International Conference on Educational Leadership from April 13-15, 2023. The event brought together over 200 researchers, practitioners, and policymakers from 15 countries to discuss the theme "Leading Education in a Changing World."</p>
-<p>Keynote speakers included renowned scholars Dr. [Speaker 1 Name] from [University] and Dr. [Speaker 2 Name] from [Organization]. Panel discussions covered topics such as digital transformation in education, sustainable leadership models, equity and inclusion in schools, and the future of educational policy.</p>
+<p>Keynote speakers included renowned scholars from leading universities and respected organizations. Panel discussions covered topics such as digital transformation in education, sustainable leadership models, equity and inclusion in schools, and the future of educational policy.</p>
 <p>"This conference provided a vital platform for sharing knowledge, fostering collaboration, and addressing the critical challenges facing educational leaders today," said Prof. Almaz Isakov, Provost and VP for Academic Affairs. "The insights gained will undoubtedly enrich our programs and research here at MOM."</p>
 <p>Selected papers from the conference will be published in a special issue of the Central Asian Journal of Educational Research.</p>
 `,
@@ -56,8 +55,8 @@ const newsItems = [
     excerpt: "A team of MOM students has been awarded first place in the National Business Plan Competition.",
     imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1920&h=1080&auto=format&fit=crop",
     content: `
-<p>A team of three undergraduate students from the Institute of Educational Leadership and Entrepreneurship has secured first place in the prestigious National Business Plan Competition held last week in Bishkek.</p>
-<p>The winning team, "EdInnovate," comprised of [Student 1 Name], [Student 2 Name], and [Student 3 Name], presented their plan for an AI-powered platform designed to personalize learning paths for high school students in Kyrgyzstan.</p>
+<p>A team of undergraduate students from the Institute of Educational Leadership and Entrepreneurship has secured first place in the prestigious National Business Plan Competition held last week in Bishkek.</p>
+<p>The winning team, "EdInnovate," presented their plan for an AI-powered platform designed to personalize learning paths for high school students in Kyrgyzstan.</p>
 <p>"We are incredibly proud of our students' achievement," commented Dean Timur Sultanov. "Their innovative idea and well-researched business plan impressed the judges and demonstrated the practical skills and entrepreneurial spirit we cultivate at MOM."</p>
 <p>The team received a cash prize and mentorship opportunities to help further develop their venture. This victory marks the second time in three years that a team from MOM has won the national competition.</p>
 `,
@@ -69,9 +68,9 @@ const newsItems = [
     author: "Research Office",
     category: "Faculty Achievement",
     excerpt: "Dr. Sharma's work on sustainable leadership models has been recognized with a major national grant.",
-    imageUrl: "https://images.unsplash.com/photo-1581091226809-1e0e7e7f1f5d?q=80&w=1920&h=1080&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1581091226809-1e0e7e7f1f5d?q=80&w=1920&h=1080&auto=format&fit=crop",
     content: `
-<p>Dr. Anya Sharma, Assistant Professor of Leadership Studies, has been awarded a significant research grant from the [Name of Granting Body, e.g., National Science Foundation of Kyrgyzstan]. The grant will support her three-year project titled "Sustainable Leadership Models for Non-Profit Organizations in Central Asia."</p>
+<p>Dr. Anya Sharma, Assistant Professor of Leadership Studies, has been awarded a significant research grant from a prestigious national funding agency. The grant will support her three-year project titled "Sustainable Leadership Models for Non-Profit Organizations in Central Asia."</p>
 <p>Dr. Sharma's research aims to identify leadership practices that contribute to the long-term sustainability and impact of non-profit organizations in the region. "I am honored to receive this grant, which will allow us to conduct in-depth case studies and develop practical frameworks for non-profit leaders," said Dr. Sharma.</p>
 <p>The project will involve collaboration with several local NGOs and aims to produce actionable insights for the non-profit sector.</p>
 `,
@@ -83,12 +82,12 @@ const newsItems = [
     author: "Academic Affairs",
     category: "Academics",
     excerpt: "Responding to growing demand, MOM introduces a cutting-edge program focused on technology in education.",
-    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1920&h=1080&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1920&h=1080&auto=format&fit=crop",
     content: `
 <p>The Institute of Educational Leadership and Entrepreneurship is excited to announce the launch of a new Master of Science (M.Sc.) program in Digital Education, set to welcome its first cohort in Fall 2024.</p>
 <p>This innovative program is designed to equip educators, instructional designers, and administrators with the skills and knowledge needed to effectively leverage technology in diverse learning environments. The curriculum will cover topics such as online pedagogy, learning analytics, instructional design for digital platforms, and the ethical implications of EdTech.</p>
 <p>"The demand for expertise in digital education has surged globally," stated Provost Almaz Isakov. "This program directly addresses that need, preparing graduates to lead and innovate in the rapidly evolving landscape of education."</p>
-<p>Applications for the M.Sc. in Digital Education will open on [Date]. More details about the curriculum and admission requirements can be found on the program page.</p>
+<p>Applications for the M.Sc. in Digital Education will open on a date to be announced soon. More details about the curriculum and admission requirements can be found on the program page.</p>
 `,
   },
 ];
@@ -139,9 +138,9 @@ export default function NewsArticlePage({ params }: any) {
       </div>
 
       {/* Article Content */}
-      {/* Using dangerouslySetInnerHTML for placeholder HTML content.
+      {/* Using dangerouslySetInnerHTML for example HTML content.
           In a real app, use a proper Markdown/HTML renderer (like react-markdown)
-          to sanitize content fetched from a CMS/database. */}
+          or fetch sanitized HTML from a CMS. */}
       <div
         className="prose dark:prose-invert max-w-none" // Using Tailwind Typography plugin styles
         dangerouslySetInnerHTML={{ __html: newsItem.content }}

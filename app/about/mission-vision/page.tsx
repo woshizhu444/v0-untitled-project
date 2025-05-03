@@ -17,7 +17,7 @@ export default function MissionVisionPage() {
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1920&h=1080&auto=format&fit=crop" // Placeholder
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="Team discussing mission"
             fill
             className="object-cover"
@@ -28,7 +28,7 @@ export default function MissionVisionPage() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="relative h-80 rounded-lg overflow-hidden order-last md:order-first">
           <Image
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1920&h=1080&auto=format&fit=crop" // Placeholder
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="Students looking towards the future"
             fill
             className="object-cover"

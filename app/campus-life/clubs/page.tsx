@@ -1,56 +1,56 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, Palette, Drama, BarChart, Globe, Gamepad2, ArrowRight } from "lucide-react"; // Example icons
+import { Users, Palette, Mic, Lightbulb, Globe, ArrowRight } from "lucide-react"; // Added Mic, Lightbulb, removed unused
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for student clubs/organizations
+// Data for student clubs/organizations - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const clubs = [
   {
     name: "Student Government Association (SGA)",
     category: "Governance",
     description: "Represents the student body, advocates for student interests, and organizes campus-wide events.",
     icon: <Users className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    contactEmail: "sga@mom.edu.kg", // Placeholder
-    websiteUrl: "#",
+    imageUrl: "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?q=80&w=600&h=400&auto=format&fit=crop", // Example image for SGA
+    contactEmail: "sga@mom.edu.kg", // Example email
+    // websiteUrl: "#", // Removed placeholder link
   },
   {
     name: "Entrepreneurship Club",
     category: "Academic/Professional",
     description: "Connects aspiring entrepreneurs, hosts workshops, pitch competitions, and networking events with industry leaders.",
-    icon: <Gamepad2 className="h-8 w-8 text-primary" />, // Placeholder icon
-    imageUrl: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    icon: <Lightbulb className="h-8 w-8 text-primary" />, // Changed to Lightbulb icon
+    imageUrl: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=600&h=400&auto=format&fit=crop", // Example image for E-Club
     contactEmail: "eclub@mom.edu.kg",
-    websiteUrl: "#",
+    // websiteUrl: "#", // Removed placeholder link
   },
   {
     name: "Debate Club",
     category: "Academic/Interest",
     description: "Engages in critical discussion and formal debate on various topics, participating in regional competitions.",
-    icon: <Drama className="h-8 w-8 text-primary" />, // Placeholder icon
-    imageUrl: "https://images.unsplash.com/photo-1543269724-a896458b8155?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    icon: <Mic className="h-8 w-8 text-primary" />, // Changed to Mic icon
+    imageUrl: "https://images.unsplash.com/photo-1543269724-a896458b8155?q=80&w=600&h=400&auto=format&fit=crop", // Example image for Debate Club
     contactEmail: "debate@mom.edu.kg",
-    websiteUrl: "#",
+    // websiteUrl: "#", // Removed placeholder link
   },
   {
     name: "International Students Association (ISA)",
     category: "Cultural",
     description: "Supports international students, promotes cultural exchange, and organizes events celebrating diversity.",
     icon: <Globe className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&h=400&auto=format&fit=crop", // Example image for ISA
     contactEmail: "isa@mom.edu.kg",
-    websiteUrl: "#",
+    // websiteUrl: "#", // Removed placeholder link
   },
    {
     name: "Arts & Culture Club",
     category: "Interest/Creative",
     description: "Explores various art forms, organizes exhibitions, performances, and visits to cultural sites.",
     icon: <Palette className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&h=400&auto=format&fit=crop", // Example image for Arts Club
     contactEmail: "arts@mom.edu.kg",
-    websiteUrl: "#",
+    // websiteUrl: "#", // Removed placeholder link
   },
   // Add more clubs as needed
 ];
@@ -89,13 +89,7 @@ export default function ClubsPage() {
             </CardContent>
             <CardFooter className="flex justify-between items-center">
                <p className="text-xs text-muted-foreground">Contact: {club.contactEmail || 'N/A'}</p>
-               {club.websiteUrl && club.websiteUrl !== "#" && (
-                 <Button asChild variant="ghost" size="sm">
-                   <Link href={club.websiteUrl} target="_blank" rel="noopener noreferrer">
-                     Website <ArrowRight className="ml-1 h-4 w-4" />
-                   </Link>
-                 </Button>
-               )}
+               {/* Removed website link rendering as the data was removed */}
             </CardFooter>
           </Card>
         ))}

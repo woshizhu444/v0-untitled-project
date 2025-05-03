@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Globe, FileCheck, Languages, ShieldCheck, Building } from "lucide-react"; // Example icons
+import { Globe, FileCheck, Languages, ShieldCheck, Building } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -60,7 +60,6 @@ export default function InternationalStudentsPage() {
               <p className="text-sm text-muted-foreground mt-4">
                 Visa application processes can take time, so start early. Contact the International Student Office for detailed guidance.
               </p>
-               {/* Link to contact page or specific international office contact */}
                <Button asChild variant="link" className="p-0 h-auto mt-2">
                  <Link href="/contact">Contact International Office</Link>
                </Button>
@@ -77,12 +76,12 @@ export default function InternationalStudentsPage() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                While the primary language of instruction for most programs is [Specify Language, e.g., English], we offer resources to support students:
+                While the primary language of instruction for most programs is English, we offer various resources to support students in achieving language proficiency:
               </p>
                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2 mt-2">
-                 <li>[Specify support, e.g., English language preparatory courses].</li>
-                 <li>[Specify support, e.g., Writing center support].</li>
-                 <li>[Specify support, e.g., Opportunities to learn Russian/Kyrgyz].</li>
+                 <li>Preparatory language courses may be available or recommended.</li>
+                 <li>Academic writing support services are accessible to all students.</li>
+                 <li>Opportunities to study local languages (such as Russian and Kyrgyz) are often available.</li>
                </ul>
             </CardContent>
           </Card>

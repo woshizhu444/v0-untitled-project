@@ -1,33 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Library, ArrowRight } from "lucide-react"; // Example icons
+import { GraduationCap, Briefcase, Library, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for Master's programs
 const masterPrograms = [
   {
     title: "M.A. in Educational Management",
     description: "Develop advanced skills in managing educational organizations, focusing on strategic planning, finance, and human resources in education.",
     icon: <GraduationCap className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/masters/educational-management", // Link to specific program details page
   },
   {
     title: "M.Sc. in Entrepreneurship and Leadership Studies",
     description: "Combine advanced leadership theories with practical entrepreneurial skills to lead innovation and manage growth in various sectors.",
     icon: <Briefcase className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1604328727967-5dd35ae7601a?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1604328727967-5dd35ae7601a?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/masters/entrepreneurship-leadership",
   },
   {
     title: "M.Ed. in Curriculum and Instruction",
     description: "Focus on designing, implementing, and evaluating effective curricula and instructional strategies for diverse learning environments.",
     icon: <Library className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1456406644174-c760685b417b?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1456406644174-c760685b417b?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/masters/curriculum-instruction",
   },
-  // Add more programs as needed
 ];
 
 export default function MastersProgramsPage() {

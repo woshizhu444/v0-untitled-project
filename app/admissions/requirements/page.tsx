@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BookOpen, GraduationCap, FileText, Languages } from "lucide-react"; // Example icons
+import { BookOpen, GraduationCap, FileText, Languages } from "lucide-react";
 
 export default function AdmissionRequirementsPage() {
   return (
@@ -31,7 +31,7 @@ export default function AdmissionRequirementsPage() {
                 <h4 className="font-semibold mb-1">Academic Background</h4>
                 <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
                   <li>Completed secondary education (High School Diploma or equivalent).</li>
-                  <li>Minimum GPA requirement: [Specify GPA, e.g., 3.0 on a 4.0 scale or equivalent].</li>
+                  <li>A competitive minimum GPA is required (please refer to specific program details or contact the Admissions Office for exact requirements).</li>
                   <li>Specific prerequisite courses may apply for certain programs (check program details).</li>
                 </ul>
               </div>
@@ -49,8 +49,7 @@ export default function AdmissionRequirementsPage() {
                <div>
                 <h4 className="font-semibold mb-1">Language Proficiency (for non-native speakers)</h4>
                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Proof of English proficiency (e.g., TOEFL score of [Score], IELTS score of [Score]).</li>
-                  {/* Add details about Russian/Kyrgyz proficiency if applicable */}
+                  <li>Proof of English proficiency meeting the minimum required scores (e.g., TOEFL, IELTS). Please check specific program requirements for exact score details.</li>
                 </ul>
               </div>
             </CardContent>
@@ -71,7 +70,7 @@ export default function AdmissionRequirementsPage() {
                 <h4 className="font-semibold mb-1">Academic Background</h4>
                 <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
                   <li>Completed Bachelor's degree from an accredited institution.</li>
-                  <li>Minimum undergraduate GPA requirement: [Specify GPA, e.g., 3.2 on a 4.0 scale].</li>
+                  <li>A competitive minimum undergraduate GPA is required (please refer to specific program details or contact the Admissions Office for exact requirements).</li>
                   <li>Relevant undergraduate major or prerequisite coursework may be required.</li>
                 </ul>
               </div>
@@ -90,8 +89,7 @@ export default function AdmissionRequirementsPage() {
                <div>
                 <h4 className="font-semibold mb-1">Language Proficiency (for non-native speakers)</h4>
                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                   <li>Proof of English proficiency (e.g., TOEFL score of [Score], IELTS score of [Score]).</li>
-                   {/* Add details about Russian/Kyrgyz proficiency if applicable */}
+                   <li>Proof of English proficiency meeting the minimum required scores (e.g., TOEFL, IELTS). Please check specific program requirements for exact score details.</li>
                  </ul>
               </div>
                <div>
@@ -126,7 +124,6 @@ export default function AdmissionRequirementsPage() {
                <p className="text-sm text-muted-foreground mt-4">
                  Please refer to the specific certificate program page for detailed requirements.
                </p>
-               {/* Link to certificate programs page */}
                <a href="/academics/certificates" className="text-sm text-primary hover:underline">
                  View Certificate Programs
                </a>

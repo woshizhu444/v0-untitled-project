@@ -18,7 +18,7 @@ export default function ResearchPage() {
           <div className="grid md:grid-cols-2">
             <div className="relative h-64 md:h-auto">
               <Image
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&h=1080&auto=format&fit=crop" // Placeholder image
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&h=1080&auto=format&fit=crop" // Example image
                 alt="Research collaboration"
                 fill
                 className="object-cover"

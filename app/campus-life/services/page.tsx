@@ -1,50 +1,50 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookUser, HeartPulse, Briefcase, ShieldQuestion, Wifi, ArrowRight } from "lucide-react"; // Example icons
+import { BookUser, HeartPulse, Briefcase, Globe, Wifi, ArrowRight } from "lucide-react"; // Added Globe, removed ShieldQuestion
 import Link from "next/link";
 
-// Placeholder data for student services
+// Data for student services - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const studentServices = [
   {
     title: "Academic Support Center",
     description: "Provides tutoring, writing assistance, study skills workshops, and academic advising to help students succeed in their coursework.",
     icon: <BookUser className="h-8 w-8 text-primary" />,
-    contactInfo: "[Phone Number / Email / Office Location]",
+    contactInfo: "Please contact the Academic Support Center for details.",
     link: "#", // Link to Academic Support Center page/section
   },
   {
     title: "Wellness & Counseling Services",
     description: "Offers confidential counseling, mental health resources, wellness programs, and support groups to promote student well-being.",
     icon: <HeartPulse className="h-8 w-8 text-primary" />,
-    contactInfo: "[Phone Number / Email / Office Location]",
+    contactInfo: "Please contact Wellness & Counseling Services for details.",
     link: "#", // Link to Wellness Center page/section
   },
   {
     title: "Career Development Services",
     description: "Assists students with career exploration, resume building, interview preparation, internship searches, and job placement.",
     icon: <Briefcase className="h-8 w-8 text-primary" />,
-    contactInfo: "[Phone Number / Email / Office Location]",
+    contactInfo: "Please contact Career Development Services for details.",
     link: "#", // Link to Career Services page/section
   },
   {
     title: "International Student Office",
     description: "Provides dedicated support for international students, including visa assistance, cultural adjustment programs, and community building.",
-    icon: <ShieldQuestion className="h-8 w-8 text-primary" />, // Using ShieldQuestion as placeholder
-    contactInfo: "[Phone Number / Email / Office Location]",
+    icon: <Globe className="h-8 w-8 text-primary" />, // Changed to Globe icon
+    contactInfo: "Please contact the International Student Office for details.",
     link: "/admissions/international", // Link back to international student info
   },
    {
     title: "IT Support Services",
     description: "Assistance with campus network access, software issues, email accounts, and other technology-related needs.",
     icon: <Wifi className="h-8 w-8 text-primary" />,
-    contactInfo: "[Phone Number / Email / Help Desk Location]",
+    contactInfo: "Please contact IT Support Services for assistance.",
     link: "#", // Link to IT Support page/portal
   },
    {
     title: "Library Services",
     description: "Access to extensive physical and digital collections, research databases, study spaces, and librarian assistance.",
     icon: <BookUser className="h-8 w-8 text-primary" />, // Reusing icon, consider Library icon if available
-    contactInfo: "[Phone Number / Email / Library Location]",
+    contactInfo: "Please contact Library Services for details.",
     link: "#", // Link to Library website
   },
 ];

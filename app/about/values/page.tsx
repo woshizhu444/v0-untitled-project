@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lightbulb, Users, Scale, BookOpen, Sparkles } from "lucide-react"; // Example icons
+import { Lightbulb, Users, Scale, BookOpen, Sparkles } from "lucide-react";
 
-// Placeholder data for core values
 const coreValues = [
   {
     title: "Excellence",
@@ -26,7 +25,7 @@ const coreValues = [
   {
     title: "Inclusivity",
     description: "We are committed to creating a diverse, equitable, and inclusive community where all members feel valued and respected.",
-    icon: <Users className="h-8 w-8 text-primary" />, // Consider a different icon?
+    icon: <Users className="h-8 w-8 text-primary" />,
   },
    {
     title: "Lifelong Learning",

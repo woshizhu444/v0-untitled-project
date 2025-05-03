@@ -5,39 +5,39 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BookCopy, ExternalLink } from "lucide-react"; // Example icons
 
-// Placeholder data for faculty research profiles - REUSE/ADAPT from about/faculty if needed
+// Data for faculty research profiles - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const facultyResearchProfiles = [
   {
     name: "Dr. Aisha Bakyt",
     title: "Professor, Educational Leadership",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Example image
     researchAreas: ["School Management", "Policy Analysis", "Educational Equity"],
     researchFocus: "Dr. Bakyt's current research investigates the impact of decentralized governance on school effectiveness and equity in Central Asian education systems.",
-    publicationsUrl: "#", // Link to publications list or profile
+    publicationsUrl: "#", // TODO: Link to publications list or profile
   },
   {
     name: "Dr. Nurlan Djumashev",
     title: "Associate Professor, Entrepreneurship",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Example image
     researchAreas: ["Social Entrepreneurship", "SME Development", "Impact Investing"],
     researchFocus: "Focuses on identifying factors that enable sustainable social enterprises and measuring their long-term community impact.",
-    publicationsUrl: "#",
+    publicationsUrl: "#", // TODO: Link to publications list or profile
   },
   {
     name: "Ms. Samara Keneshova",
     title: "Lecturer, Educational Technology",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Example image
     researchAreas: ["Instructional Design", "Online Learning Environments", "Digital Literacy"],
     researchFocus: "Ms. Keneshova studies the design principles for effective online collaboration and the development of digital literacy skills in teacher training programs.",
-    publicationsUrl: "#",
+    publicationsUrl: "#", // TODO: Link to publications list or profile
   },
   {
     name: "Dr. Bolot Askarov",
     title: "Professor, Leadership Studies",
-    imageUrl: "/public/placeholder-user.jpg", // Replace with actual image path
+    imageUrl: "https://images.unsplash.com/photo-1622675363519-dff410113c8a?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Example image
     researchAreas: ["Organizational Behavior", "Ethical Leadership", "Cross-Cultural Management"],
     researchFocus: "Examines the role of ethical leadership in fostering organizational trust and performance, particularly in multicultural contexts.",
-    publicationsUrl: "#",
+    publicationsUrl: "#", // TODO: Link to publications list or profile
   },
   // Add more faculty members as needed
 ];
@@ -56,8 +56,8 @@ export default function FacultyResearchPage() {
           <Card key={member.name} className="overflow-hidden flex flex-col">
             <div className="relative h-56 w-full bg-muted">
               <Image
-                // Note: Using placeholder from public folder. Update paths when real images are added.
-                src={member.imageUrl.startsWith('/public') ? member.imageUrl.replace('/public', '') : member.imageUrl}
+                // TODO: Update image paths when real images are added.
+                src={member.imageUrl} // Simplified src, assuming URLs are absolute
                 alt={`Portrait of ${member.name}`}
                 fill
                 className="object-cover"

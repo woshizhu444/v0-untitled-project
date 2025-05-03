@@ -15,7 +15,7 @@ export default function CampusLifePage() {
       {/* Image Banner */}
       <section className="mb-16 relative h-64 md:h-80 rounded-lg overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&h=1080&auto=format&fit=crop" // Placeholder image
+          src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&h=1080&auto=format&fit=crop"
           alt="Students on campus"
           fill
           className="object-cover"
@@ -73,7 +73,7 @@ export default function CampusLifePage() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-primary" /> {/* Consider a different icon? Maybe Activity? */}
+              <Users className="h-5 w-5 text-primary" />
               Clubs & Activities
             </CardTitle>
           </CardHeader>

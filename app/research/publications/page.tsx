@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { BookCopy, ExternalLink, Filter } from "lucide-react"; // Example icons
 import Link from "next/link";
 
-// Placeholder data for publications - REPLACE WITH ACTUAL DATA
+// Data for publications - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const publications = [
   {
     id: "pub1",
@@ -15,7 +15,7 @@ const publications = [
     type: "Journal Article", // e.g., Journal Article, Book Chapter, Conference Paper, Report
     doi: "10.xxxx/cajer.2023.xxxx", // Optional DOI link
     abstract: "This study investigates the leadership styles most correlated with positive student outcomes and teacher satisfaction in the context of Kyrgyz secondary education...",
-    link: "#", // Link to full text or DOI
+    link: "#", // TODO: Link to full text or DOI
   },
   {
     id: "pub2",
@@ -26,7 +26,7 @@ const publications = [
     type: "Journal Article",
     doi: "10.xxxx/jee.2022.xxxx",
     abstract: "Examining the pedagogical approaches and institutional support mechanisms used at the Institute to cultivate entrepreneurial skills and attitudes among students.",
-    link: "#",
+    link: "#", // TODO: Link to full text or DOI
   },
   {
     id: "pub3",
@@ -36,7 +36,7 @@ const publications = [
     year: 2023,
     type: "Conference Paper",
     abstract: "Presents a framework for integrating digital literacy and EdTech tools effectively into pre-service teacher training curricula.",
-    link: "#",
+    link: "#", // TODO: Link to full text or DOI
   },
    {
     id: "pub4",
@@ -47,7 +47,7 @@ const publications = [
     publisher: "Global Press",
     year: 2024,
     abstract: "Analyzes the impact of ethical leadership behaviors on employee trust and organizational commitment within Central Asian companies.",
-    link: "#",
+    link: "#", // TODO: Link to full text or DOI
   },
   // Add more publications as needed
 ];

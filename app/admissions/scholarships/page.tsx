@@ -1,10 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Award, HandCoins, ExternalLink, FileText } from "lucide-react"; // Example icons
+import { Award, HandCoins, ExternalLink, FileText } from "lucide-react";
 import Link from "next/link";
 
-// Placeholder data - REPLACE WITH ACTUAL SCHOLARSHIP DETAILS
 const internalScholarships = [
   {
     name: "Presidential Merit Scholarship",
@@ -54,7 +53,6 @@ export default function ScholarshipsPage() {
                       <p>{scholarship.description}</p>
                       <p><strong>Eligibility:</strong> {scholarship.eligibility}</p>
                       <p><strong>Amount/Value:</strong> {scholarship.amount}</p>
-                      {/* Optional: Add link to specific scholarship details or application */}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -73,10 +71,9 @@ export default function ScholarshipsPage() {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
-                <li>[Link to Ministry of Education Scholarship Portal]</li>
-                <li>[Link to International Scholarship Database 1, e.g., DAAD, Fulbright]</li>
-                <li>[Link to Local Foundation Scholarship Program]</li>
-                {/* Add more relevant external links */}
+                <li>National Ministry of Education scholarship portal (search online for details).</li>
+                <li>Reputable international scholarship databases (e.g., DAAD, Fulbright - search online).</li>
+                <li>Local foundation and organizational scholarship programs (research opportunities in your region).</li>
               </ul>
                <p className="text-xs text-muted-foreground mt-4">
                  Note: The Institute is not responsible for the content or application processes of external websites.
@@ -104,8 +101,8 @@ export default function ScholarshipsPage() {
                 <li>Meet the general admission requirements.</li>
               </ol>
               <Button asChild className="w-full mt-4">
-                <Link href="#"> {/* Link to Financial Aid Application Form/Portal */}
-                  Access Financial Aid Forms (Placeholder)
+                <Link href="#"> {/* Placeholder link */}
+                  Access Financial Aid Forms
                 </Link>
               </Button>
                <p className="text-xs text-muted-foreground mt-2">

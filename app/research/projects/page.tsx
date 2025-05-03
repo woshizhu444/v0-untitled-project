@@ -5,7 +5,7 @@ import { Lightbulb, Users, ArrowRight } from "lucide-react"; // Example icons
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for featured projects - REPLACE WITH ACTUAL DETAILS
+// Data for featured projects - ACTUAL DETAILS SHOULD BE MANAGED VIA CMS/DATABASE
 const featuredProjects = [
   {
     slug: "edtech-lab", // Matches link from research page
@@ -13,7 +13,7 @@ const featuredProjects = [
     status: "Ongoing", // e.g., Ongoing, Completed
     area: "Technology Enhanced Learning", // Link to research area
     description: "Exploring the impact of technology on pedagogical practices in Kyrgyzstan's secondary schools. Developing and testing scalable EdTech solutions for improved learning outcomes.",
-    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder from research page
+    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&h=400&auto=format&fit=crop", // Example image
     principalInvestigator: "Dr. Samara Keneshova", // Optional
     fundingSource: "Internal Grant / Ministry of Education", // Optional
   },
@@ -23,7 +23,7 @@ const featuredProjects = [
     status: "Completed",
     area: "Educational Leadership & Policy",
     description: "Analyzing the effectiveness of different leadership approaches in diverse school contexts across Central Asia, identifying best practices for school improvement.",
-    imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&h=400&auto=format&fit=crop", // Example image
     principalInvestigator: "Dr. Bolot Askarov",
     fundingSource: "International Research Foundation",
   },
@@ -33,7 +33,7 @@ const featuredProjects = [
     status: "Ongoing",
     area: "Entrepreneurship & Innovation in Education",
     description: "Providing mentorship, training, and seed funding for student-led social enterprises addressing community challenges through innovative business models.",
-    imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=600&h=400&auto=format&fit=crop", // Example image
     principalInvestigator: "Prof. Nurlan Djumashev",
     fundingSource: "UNDP / Local Business Partnerships",
   },

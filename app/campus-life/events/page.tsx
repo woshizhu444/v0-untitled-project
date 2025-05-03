@@ -5,7 +5,7 @@ import { CalendarDays, Clock, MapPin, ArrowRight, Filter } from "lucide-react"; 
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for campus events - REPLACE WITH ACTUAL/DYNAMIC DATA
+// Data for campus events - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const events = [
   {
     slug: "guest-lecture-series-may",
@@ -14,9 +14,9 @@ const events = [
     time: "2:00 PM - 3:30 PM",
     location: "Main Auditorium",
     category: "Academic / Lecture",
-    description: "Join us for an insightful talk by industry expert [Speaker Name] on navigating leadership challenges in today's tech-driven world.",
-    imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    registrationLink: "#", // Optional registration link
+    description: "Join us for an insightful talk by a distinguished industry expert on navigating leadership challenges in today's tech-driven world.",
+    imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&h=400&auto=format&fit=crop", // Example image
+    // registrationLink: "#", // Removed placeholder link
   },
   {
     slug: "spring-cultural-fair",
@@ -26,7 +26,7 @@ const events = [
     location: "Central Quad",
     category: "Cultural / Social",
     description: "Celebrate the diverse cultures within our community! Enjoy food, music, performances, and activities from around the world.",
-    imageUrl: "https://images.unsplash.com/photo-1511795409837-091a56391_79?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1511795409837-091a56391_79?q=80&w=600&h=400&auto=format&fit=crop", // Example image
   },
   {
     slug: "startup-pitch-night",
@@ -36,8 +36,8 @@ const events = [
     location: "Entrepreneurship Center",
     category: "Entrepreneurship / Competition",
     description: "Watch student entrepreneurs pitch their innovative business ideas to a panel of judges and potential investors.",
-    imageUrl: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    registrationLink: "#",
+    imageUrl: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=600&h=400&auto=format&fit=crop", // Example image
+    // registrationLink: "#", // Removed placeholder link
   },
    {
     slug: "career-workshop-resume",
@@ -47,8 +47,8 @@ const events = [
     location: "Career Services Office",
     category: "Career Development / Workshop",
     description: "Learn how to craft a compelling resume that highlights your skills and experiences for potential employers.",
-    imageUrl: "https://images.unsplash.com/photo-1553877522-c95364c41c68?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    registrationLink: "#",
+    imageUrl: "https://images.unsplash.com/photo-1553877522-c95364c41c68?q=80&w=600&h=400&auto=format&fit=crop", // Example image
+    // registrationLink: "#", // Removed placeholder link
   },
   // Add more events as needed
 ];
@@ -102,11 +102,7 @@ export default function EventsPage() {
                 <p className="text-sm text-muted-foreground line-clamp-3">{event.description}</p>
               </CardContent>
               <CardFooter>
-                 {event.registrationLink && event.registrationLink !== "#" && (
-                   <Button asChild size="sm">
-                     <Link href={event.registrationLink}>Register / Details <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                   </Button>
-                 )}
+                 {/* Removed registration link rendering as the data was removed */}
                  {/* Or a simple details link */}
                  {/*
                  <Button asChild variant="outline" size="sm">

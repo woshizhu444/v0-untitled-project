@@ -4,7 +4,7 @@ import { Calendar, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for news articles
+// Data for news articles - ACTUAL DATA SHOULD BE MANAGED VIA CMS/DATABASE
 const newsItems = [
   {
     slug: "entrepreneurship-center",
@@ -27,20 +27,20 @@ const newsItems = [
     excerpt: "A team of MOM students has been awarded first place in the National Business Plan Competition.",
     imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&h=400&auto=format&fit=crop",
   },
-  // Add more placeholder news items if needed
+  // Add more news items as needed
   {
     slug: "faculty-research-grant",
     title: "Dr. Anya Sharma Receives Prestigious Research Grant",
     date: "February 10, 2023",
     excerpt: "Dr. Sharma's work on sustainable leadership models has been recognized with a major national grant.",
-    imageUrl: "https://images.unsplash.com/photo-1581091226809-1e0e7e7f1f5d?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1581091226809-1e0e7e7f1f5d?q=80&w=600&h=400&auto=format&fit=crop",
   },
    {
     slug: "new-academic-program",
     title: "Institute Announces New Master's Program in Digital Education",
     date: "January 20, 2023",
     excerpt: "Responding to growing demand, MOM introduces a cutting-edge program focused on technology in education.",
-    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=600&h=400&auto=format&fit=crop",
   },
 ];
 

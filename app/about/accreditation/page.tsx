@@ -14,15 +14,13 @@ export default function AccreditationPage() {
         <div className="space-y-6">
           <h2 className="text-3xl font-semibold text-primary">Our Commitment to Quality</h2>
           <p className="text-lg text-muted-foreground">
-            We are proud to be accredited by [Name of Accrediting Body, e.g., the Ministry of Education and Science of the Kyrgyz Republic]. This accreditation signifies that our programs meet rigorous external standards for quality and that we are dedicated to continuous improvement.
+            The Institute is fully accredited by the national Ministry of Education and Science, affirming our adherence to the highest standards of academic excellence. This official recognition underscores our commitment to providing quality education and signifies that our programs meet rigorous criteria for institutional effectiveness and continuous improvement.
           </p>
           <p className="text-muted-foreground">
-            Accreditation provides assurance to students, employers, and the public of the quality of the education provided by the Institute and the credentials earned by our graduates. It demonstrates our commitment to accountability and transparency.
+            This accreditation provides assurance to students, employers, and the public regarding the quality of the education provided by the Institute and the value of the credentials earned by our graduates. It demonstrates our commitment to accountability and transparency in all our operations.
           </p>
-          {/* Optional: Link to the accrediting body's website */}
-          {/* <a href="#" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-            Learn more about [Accrediting Body Name]
-          </a> */}
+          {/* Optional: A link to the official accreditation status or the accrediting body's website can be added here when the specific URL is available. */}
+          {/* Example: <a href="[Official Accreditation URL]" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Verify our Accreditation Status</a> */}
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
           {/* Placeholder for Accreditation Logo or related image */}

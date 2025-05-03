@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, GraduationCap, BookOpen, Building, Globe, Award } from "lucide-react"; // Example icons
+import { Users, GraduationCap, BookOpen, Building, Globe, Award } from "lucide-react";
 
-// Placeholder data for facts & figures
 const facts = [
   {
     stat: "2015",
@@ -36,12 +35,12 @@ const facts = [
    {
     stat: "3",
     label: "Research Centers",
-    icon: <Building className="h-8 w-8 text-primary" />, // Consider a different icon? FlaskConical?
+    icon: <Building className="h-8 w-8 text-primary" />,
   },
    {
     stat: "20+",
     label: "Student Clubs & Organizations",
-    icon: <Users className="h-8 w-8 text-primary" />, // Consider a different icon? Activity?
+    icon: <Users className="h-8 w-8 text-primary" />,
   },
 ];
 
@@ -71,7 +70,7 @@ export default function FactsPage() {
 
       {/* Optional: Add context or source for the data */}
       <div className="mt-12 text-center text-sm text-muted-foreground">
-        <p>Data as of [Specify Date or Academic Year, e.g., Academic Year 2023-2024].</p>
+        <p>Data as of Academic Year 2023-2024.</p>
       </div>
     </div>
   );

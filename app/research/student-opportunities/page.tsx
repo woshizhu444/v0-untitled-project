@@ -4,15 +4,15 @@ import { GraduationCap, Microscope, Users, Lightbulb, ArrowRight } from "lucide-
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for opportunities
+// Data for opportunities
 const opportunities = [
   {
     title: "Research Assistantships",
     description: "Work directly with faculty members on their ongoing research projects. Gain hands-on experience in data collection, analysis, literature reviews, and report writing.",
     eligibility: "Open to undergraduate and graduate students based on project needs and faculty selection. Check specific project postings.",
     icon: <Microscope className="h-8 w-8 text-primary" />,
-    link: "#", // Link to a page listing current RA openings or faculty profiles
-    linkLabel: "Find Openings (Placeholder)",
+    link: "/research/faculty", // Link to faculty profiles page (assuming faculty list research needs)
+    linkLabel: "View Faculty Profiles",
   },
   {
     title: "Thesis & Capstone Projects",
@@ -35,8 +35,8 @@ const opportunities = [
     description: "Apply for small grants offered by the Institute to support independent student research projects or conference travel.",
     eligibility: "Based on proposal submission and review process.",
     icon: <Lightbulb className="h-8 w-8 text-primary" />,
-    link: "#", // Link to grant application details page
-    linkLabel: "Learn About Grants (Placeholder)",
+    // TODO: Consider adding a specific link if available
+    linkLabel: "Grant Information (Contact Research Office)", // Changed label as direct link is missing
   },
 ];
 

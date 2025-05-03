@@ -434,14 +434,9 @@ export default function AboutPage() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
+                        {/* Placeholder for Accreditation Logo */}
                         <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Image
-                            src="/placeholder.svg?height=100&width=100"
-                            alt="Accreditation logo"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                          />
+                           {/* <Image src="/path/to/logo1.svg" alt="NAC Logo" width={40} height={40} /> */}
                         </div>
                         <div>
                           <h3 className="text-xl font-medium">National Accreditation Council of Kyrgyzstan</h3>
@@ -458,14 +453,9 @@ export default function AboutPage() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
+                         {/* Placeholder for Accreditation Logo */}
                         <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Image
-                            src="/placeholder.svg?height=100&width=100"
-                            alt="Accreditation logo"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                          />
+                           {/* <Image src="/path/to/logo2.svg" alt="IEAC Logo" width={40} height={40} /> */}
                         </div>
                         <div>
                           <h3 className="text-xl font-medium">International Education Accreditation Commission</h3>
@@ -482,14 +472,9 @@ export default function AboutPage() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
+                         {/* Placeholder for Accreditation Logo */}
                         <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Image
-                            src="/placeholder.svg?height=100&width=100"
-                            alt="Accreditation logo"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                          />
+                           {/* <Image src="/path/to/logo3.svg" alt="CAQAN Logo" width={40} height={40} /> */}
                         </div>
                         <div>
                           <h3 className="text-xl font-medium">Central Asian Quality Assurance Network</h3>
@@ -506,14 +491,9 @@ export default function AboutPage() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
+                         {/* Placeholder for Accreditation Logo */}
                         <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Image
-                            src="/placeholder.svg?height=100&width=100"
-                            alt="Accreditation logo"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                          />
+                           {/* <Image src="/path/to/logo4.svg" alt="EEC Logo" width={40} height={40} /> */}
                         </div>
                         <div>
                           <h3 className="text-xl font-medium">Entrepreneurship Education Consortium</h3>

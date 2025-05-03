@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CalendarClock } from "lucide-react"; // Example icon
+import { CalendarClock } from "lucide-react";
 
-// Placeholder data for deadlines - REPLACE WITH ACTUAL DATES
 const deadlinesFall = [
   { type: "Early Decision Application", deadline: "November 1, 2024" },
   { type: "Early Decision Notification", deadline: "December 15, 2024" },
@@ -32,7 +31,7 @@ export default function AdmissionDeadlinesPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <CalendarClock className="h-6 w-6 text-primary" />
-              Fall Semester Admission ([Year, e.g., 2025])
+              Fall Semester Admission (Upcoming Academic Year)
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -60,7 +59,7 @@ export default function AdmissionDeadlinesPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <CalendarClock className="h-6 w-6 text-primary" />
-              Spring Semester Admission ([Year, e.g., 2025])
+              Spring Semester Admission (Upcoming Academic Year)
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -86,7 +85,7 @@ export default function AdmissionDeadlinesPage() {
 
       <div className="mt-12 text-center text-sm text-muted-foreground">
         <p>
-          All deadlines are typically [Time, e.g., 11:59 PM] in the [Timezone, e.g., Bishkek Time (GMT+6)] on the date listed.
+          All deadlines are typically by the end of the day (local time) on the date listed unless otherwise specified.
           Deadlines are subject to change. Please verify with the Admissions Office.
         </p>
       </div>

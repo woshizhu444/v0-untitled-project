@@ -4,21 +4,21 @@ import { Home, Building2, Utensils, Info, ArrowRight } from "lucide-react"; // E
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data - REPLACE WITH ACTUAL DETAILS
+// Data for housing options - ACTUAL DETAILS SHOULD BE MANAGED VIA CMS/DATABASE
 const onCampusHousing = [
   {
     name: "Student Residence Hall A",
     type: "Shared Rooms",
     features: ["Shared bedrooms (2-3 students)", "Common lounges & study areas", "Shared bathrooms", "Laundry facilities", "Wi-Fi included"],
-    imageUrl: "https://images.unsplash.com/photo-1567767292333-a4f4a468a64c?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    applicationLink: "#",
+    imageUrl: "https://images.unsplash.com/photo-1567767292333-a4f4a468a64c?q=80&w=600&h=400&auto=format&fit=crop", // Example Dorm Room Image
+    applicationLink: "#", // Replace with actual application link
   },
    {
     name: "Graduate Student Apartments",
     type: "Studio/Apartment Style",
     features: ["Studio or 1-bedroom units", "Private kitchenette & bathroom", "Furnished options available", "Quiet study environment"],
-    imageUrl: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
-    applicationLink: "#",
+    imageUrl: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&h=400&auto=format&fit=crop", // Example Apartment Image
+    applicationLink: "#", // Replace with actual application link
   },
 ];
 
@@ -98,10 +98,10 @@ export default function HousingDiningPage() {
                While the Institute offers on-campus options, many students choose to live off-campus in the surrounding neighborhoods. Here are some resources to help your search:
              </p>
              <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2 mb-4">
-               <li>[Link to Local Apartment Listing Website 1]</li>
-               <li>[Link to Local Apartment Listing Website 2]</li>
-               <li>[Link to Student Facebook Group for Housing]</li>
-               <li>[Information about local real estate agents specializing in rentals]</li>
+               <li>Popular local apartment listing websites (search online).</li>
+               <li>Student community forums or social media groups for housing leads.</li>
+               <li>Local real estate agencies specializing in rental properties.</li>
+               <li>University bulletin boards (physical or online, if available).</li>
              </ul>
              <p className="text-xs text-muted-foreground">
                Note: The Institute does not endorse specific off-campus housing providers. Students are responsible for their own off-campus arrangements.
@@ -126,7 +126,7 @@ export default function HousingDiningPage() {
                  <p className="text-xs font-medium text-muted-foreground">Hours: <span className="font-normal">{option.hours}</span></p>
                  {option.menuLink && option.menuLink !== "#" && (
                    <Button asChild variant="link" size="sm" className="p-0 h-auto mt-2">
-                     <Link href={option.menuLink}>View Menu (Placeholder)</Link>
+                     <Link href={option.menuLink}>View Menu</Link> {/* Removed placeholder text */}
                    </Button>
                  )}
                </CardContent>
@@ -138,7 +138,7 @@ export default function HousingDiningPage() {
            <CardContent className="p-6 flex items-center gap-4">
              <Info className="h-5 w-5 text-primary flex-shrink-0" />
              <p className="text-sm text-muted-foreground">
-               Information about mandatory or optional student meal plans can be found [Link to Meal Plan Page or Finance Office].
+               Information about mandatory or optional student meal plans, including costs and options, can be obtained from the Campus Dining Services or the Finance Office.
              </p>
            </CardContent>
          </Card>

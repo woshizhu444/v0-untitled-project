@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, TrendingUp, Users, ArrowRight } from "lucide-react"; // Example icons
+import { Briefcase, TrendingUp, Users, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Placeholder data for Professional Development offerings
 const pdOfferings = [
   {
     title: "Workshop: Effective Communication for Leaders",
     description: "Enhance your communication skills to lead teams effectively, manage conflict, and deliver impactful presentations.",
-    type: "Workshop", // Can be Workshop, Short Course, Seminar etc.
+    type: "Workshop",
     icon: <Users className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/professional-development/communication-workshop", // Link to specific offering details page
   },
   {
@@ -19,7 +18,7 @@ const pdOfferings = [
     description: "Learn the essential principles and practices of project management to deliver projects on time and within budget.",
     type: "Short Course",
     icon: <Briefcase className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/professional-development/project-management",
   },
   {
@@ -27,10 +26,9 @@ const pdOfferings = [
     description: "Stay updated on the latest advancements in EdTech and explore their potential applications in various educational settings.",
     type: "Seminar Series",
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=600&h=400&auto=format&fit=crop", // Placeholder
+    imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=600&h=400&auto=format&fit=crop",
     detailsUrl: "/academics/professional-development/edtech-trends",
   },
-  // Add more offerings as needed
 ];
 
 export default function ProfessionalDevelopmentPage() {
@@ -41,7 +39,7 @@ export default function ProfessionalDevelopmentPage() {
         Invest in your growth with our range of workshops, short courses, and seminars designed for working professionals seeking to enhance their skills and knowledge.
       </p>
 
-      {/* TODO: Add filtering by type (Workshop, Course, etc.) */}
+      {/* Future enhancement: Add filtering by type (Workshop, Course, etc.) */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pdOfferings.map((offering) => (
           <Card key={offering.title} className="flex flex-col overflow-hidden">
