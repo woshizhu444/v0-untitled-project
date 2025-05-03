@@ -99,7 +99,14 @@ function getNewsItem(slug: string) {
   return newsItems.find((item) => item.slug === slug);
 }
 
-export default function NewsArticlePage({ params }: { params: { slug: string } }) {
+// Define a specific type for the page props
+interface NewsArticlePageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function NewsArticlePage({ params }: NewsArticlePageProps) {
   const newsItem = getNewsItem(params.slug);
 
   if (!newsItem) {
