@@ -109,13 +109,13 @@ export default function Header() {
       )}
     >
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="relative h-10 w-10 overflow-hidden rounded-full bg-primary/10">
+        <Link href="/" className="flex items-center space-x-3">
+          <div className="relative h-16 w-16 overflow-hidden">
             <Image
-              src="https://matuimg.com/i/2025/05/03/xuat9j.png"
+              src="https://matuimg.com/i/2025/05/03/z2w3hv.png"
               alt="MOM Logo"
-              width={50}
-              height={50}
+              width={100}
+              height={100}
               className="h-full w-full object-contain"
             />
           </div>
@@ -179,12 +179,12 @@ export default function Header() {
               <div className="flex flex-col gap-6 py-6">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="flex items-center space-x-2">
-                    <div className="relative h-8 w-8 overflow-hidden rounded-full bg-primary/10">
+                    <div className="relative h-14 w-14 overflow-hidden">
                       <Image
-                        src="https://matuimg.com/i/2025/05/03/xuat9j.png"
+                        src="https://matuimg.com/i/2025/05/03/z2w3hv.png"
                         alt="MOM Logo"
-                        width={40}
-                        height={40}
+                        width={100}
+                        height={100}
                         className="h-full w-full object-contain"
                       />
                     </div>

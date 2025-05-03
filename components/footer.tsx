@@ -10,13 +10,13 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full bg-primary/10">
+            <Link href="/" className="flex items-center space-x-3">
+              <div className="relative h-16 w-16 overflow-hidden">
                 <Image
-                  src="https://matuimg.com/i/2025/05/03/xuat9j.png"
+                  src="https://matuimg.com/i/2025/05/03/z2w3hv.png"
                   alt="MOM Logo"
-                  width={50}
-                  height={50}
+                  width={100}
+                  height={100}
                   className="h-full w-full object-contain"
                 />
               </div>
