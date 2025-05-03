@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { Calendar, User } from "lucide-react"; // Example icons
 import { Badge } from "@/components/ui/badge";
 
+export const runtime = 'edge'; // Add this line for Cloudflare Pages Edge Runtime compatibility
+
 // Placeholder data for news articles (same as in news/page.tsx for lookup)
 // In a real application, this data would likely come from a CMS or database
 const newsItems = [
